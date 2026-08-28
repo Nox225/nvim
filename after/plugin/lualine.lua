@@ -12,7 +12,7 @@ require('lualine').setup {
     lualine_c = {
       {
         'filename',
-        color = { fg = '#e6b450', gui = 'bold' },
+        color = { fg = '#00af00', gui = 'bold' },
       },
     },
     lualine_x = {},
