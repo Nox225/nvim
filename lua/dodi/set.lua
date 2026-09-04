@@ -71,3 +71,15 @@ vim.api.nvim_create_autocmd("FocusLost", {
   -- command = "wa",
 })
 
+vim.g.lazygit_floating_window_winblend = 0
+vim.g.lazygit_floating_window_scaling_factor = 0.9
+vim.g.lazygit_floating_window_border_chars = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }
+vim.g.lazygit_floating_window_use_plenary = 1
+
+vim.g.lazygit_use_neovim_remote = 1
+
+vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", { silent = true, desc = "LazyGit" })
+vim.keymap.set("n", "<leader>gf", "<cmd>LazyGitCurrentFile<CR>", { silent = true, desc = "LazyGit current file" })
+vim.keymap.set("n", "<leader>gl", "<cmd>LazyGitFilter<CR>", { silent = true, desc = "LazyGit log (project)" })
+vim.keymap.set("n", "<leader>gL", "<cmd>LazyGitFilterCurrentFile<CR>", { silent = true, desc = "LazyGit log (file)" })
+

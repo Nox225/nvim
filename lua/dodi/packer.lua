@@ -204,4 +204,10 @@ return require('packer').startup(function(use)
 
     use 'chentoast/marks.nvim'
 
+    use({
+        "kdheepak/lazygit.nvim",
+        requires = {
+            "nvim-lua/plenary.nvim",
+        },
+    })
 end)
