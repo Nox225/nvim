@@ -21,6 +21,17 @@ return require('packer').startup(function(use)
 		branch = 'master',
 		requires = { 'nvim-lua/plenary.nvim' }
 	}
+
+    use {
+        "nvim-telescope/telescope-frecency.nvim",
+        requires = { "kkharji/sqlite.lua" },
+    }
+
+    use {
+        'nvim-telescope/telescope-fzf-native.nvim',
+        run = 'make'
+    }
+
     use {
     	'nvim-tree/nvim-tree.lua',
     	requires = { 'nvim-tree/nvim-web-devicons' }
