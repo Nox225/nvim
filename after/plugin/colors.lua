@@ -125,3 +125,6 @@ vim.api.nvim_set_hl(0, "FlashBackdrop", {
     fg = "#6c6c85",   -- jaśniejszy fiolet/szary
 })
 
+vim.api.nvim_set_hl(0, "TreesitterContext", {
+    bg = "#1a1a1a",
+})
