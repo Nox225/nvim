@@ -16,6 +16,7 @@ require('telescope').setup({
       },
       n = {
         ["<C-c>"] = actions.close,
+        ["q"] = actions.close,
       },
     },
   },

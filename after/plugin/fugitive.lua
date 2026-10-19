@@ -15,9 +15,10 @@ end
 vim.keymap.set("n", "<leader>ws", search_from_under)
 vim.keymap.set("v", "<leader>ws", search_from_visual)
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
-vim.keymap.set("n", "<leader>gb", "<cmd>Gitsigns toggle_current_line_blame<CR>", {
-  desc = "Toggle git blame",
+vim.keymap.set("n", "<leader>gb", "<cmd>Gitsigns blame<CR>", {
+  desc = "Git blame (all lines)",
 })
+
 local function toggle_git_log()
     local git_log_bufnr = nil
     

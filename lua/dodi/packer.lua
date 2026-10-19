@@ -46,6 +46,8 @@ return require('packer').startup(function(use)
 
     use 'tpope/vim-surround'
 
+    use 'sheerun/vim-polyglot'
+
     -- use({
     --     "sphamba/smear-cursor.nvim",
     --     config = function()
@@ -83,7 +85,7 @@ return require('packer').startup(function(use)
             end,
         })
 
-    use "petertriho/nvim-scrollbar"
+    use({ "petertriho/nvim-scrollbar", branch = "v1" })
 
 	use 'Mofiqul/vscode.nvim'
 

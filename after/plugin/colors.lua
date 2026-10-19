@@ -128,3 +128,5 @@ vim.api.nvim_set_hl(0, "FlashBackdrop", {
 vim.api.nvim_set_hl(0, "TreesitterContext", {
     bg = "#1a1a1a",
 })
+
+vim.api.nvim_set_hl(0, 'GitSignsChange', { fg = '#FFFF00' })
