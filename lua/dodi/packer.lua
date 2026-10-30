@@ -181,7 +181,22 @@ return require('packer').startup(function(use)
     use {
         "sindrets/diffview.nvim",
         requires = "nvim-tree/nvim-web-devicons",
+        config = function()
+            require("diffview").setup({
+                    view = {
+                        merge_tool = {
+                            layout = "diff3_mixed",
+                            disable_diagnostics = true,
+                        },
+                    },
+                })
+        end,
     }
+
+    use({
+          "mikavilpas/yazi.nvim",
+          requires = { "nvim-lua/plenary.nvim" },
+    })
 
 	use('lewis6991/gitsigns.nvim')
 

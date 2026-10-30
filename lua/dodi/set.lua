@@ -39,29 +39,32 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-local function my_on_attach(bufnr)
-    local api = require('nvim-tree.api')
-    api.config.mappings.default_on_attach(bufnr)
-    vim.keymap.del('n', '<C-e>', { buffer = bufnr })
-end
-
-require('nvim-tree').setup({
-    on_attach = my_on_attach,
-    actions = {
-        open_file = {
-            quit_on_open = true,
-        },
-    },
-    update_focused_file = {
-        enable = true,
-        update_root = false,
-    },
-    view = {
-        width = 40
-    }
-})
+-- local function my_on_attach(bufnr)
+--     local api = require('nvim-tree.api')
+--     api.config.mappings.default_on_attach(bufnr)
+--     vim.keymap.del('n', '<C-e>', { buffer = bufnr })
+-- end
+--
+-- require('nvim-tree').setup({
+--     on_attach = my_on_attach,
+--     actions = {
+--         open_file = {
+--             quit_on_open = true,
+--         },
+--     },
+--     update_focused_file = {
+--         enable = true,
+--         update_root = false,
+--     },
+--     view = {
+--         width = 40
+--     }
+-- })
 
 -- vim.opt.colorcolumn = "80"
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 vim.opt.cursorline = true
 
