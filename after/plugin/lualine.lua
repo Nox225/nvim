@@ -1,6 +1,15 @@
+local dracula = require('lualine.themes.dracula')
+
+-- Change section backgrounds
+local bg = '#0B0E0B'
+
+for _, mode in pairs(dracula) do
+  mode.c.bg = bg
+end
+
 require('lualine').setup {
   options = {
-    theme = 'ayu_dark',
+    theme = dracula,
     icons_enabled = true,
     component_separators = { left = '', right = '' },
     section_separators = { left = '', right = '' },
@@ -12,7 +21,7 @@ require('lualine').setup {
     lualine_c = {
       {
         'filename',
-        color = { fg = '#00af00', gui = 'bold' },
+        color = { fg = '#bd93f9', gui = 'bold' },
       },
     },
     lualine_x = {},
