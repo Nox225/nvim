@@ -22,9 +22,14 @@ require('lualine').setup {
   sections = {
     lualine_a = { 'mode' },
     lualine_b = {
-      'branch',
-      -- zaokrąglenie na prawym końcu bąbla z branchem
-      { 'diff', separator = { right = round_r } },
+      {
+        'branch',
+        separator = { right = round_r },
+      },
+      {
+        'diff',
+        separator = { right = round_r },
+      },
     },
     lualine_c = {
       {
