@@ -130,3 +130,5 @@ vim.api.nvim_set_hl(0, "TreesitterContext", {
 })
 
 vim.api.nvim_set_hl(0, 'GitSignsChange', { fg = '#FFFF00' })
+
+vim.api.nvim_set_hl(0, "MsgArea", { bg = "#0B0E0B" })
